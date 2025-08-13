@@ -2,39 +2,62 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact | Pasindu</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasindu Pabasara</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
-            <h1 class="logo">Pasindu</h1>
-            <ul class="nav-links">
+    <div class="bg-animation"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
+            <ul class="nav-list">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="https://medium.com/@pabasarapasindu365" target="_blank" rel="noopener">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <main>
-        <section class="contact">
-            <h2 class="section-title">Let's Connect</h2>
-            <form id="contactForm">
-                <input type="text" name="name" placeholder="Your Name" required />
-                <input type="email" name="email" placeholder="Your Email" required />
-                <input type="text" name="subject" placeholder="Subject" required />
-                <textarea name="message" placeholder="Your Message..." required></textarea>
-                <button type="submit" class="btn">Send Message</button>
-                <p id="successMsg" style="display:none;">✅ Thank you for your message!</p>
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <h2>Let's Build Something Amazing</h2>
+            <p class="contact-subtitle">
+                Ready to bring your ideas to life? Let's collaborate and make something extraordinary.
+            </p>
+
+            <form class="contact-form" action="https://formsubmit.co/pabasarapasindu365@gmail.com" method="POST">
+                <input type="hidden" name="_captcha" value="false" />
+                <div class="form-group">
+                    <input type="text" name="name" required />
+                    <label>Your Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" required />
+                    <label>Your Email</label>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" required></textarea>
+                    <label>Tell me about your project...</label>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
             </form>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <script src="assets/js/script.js"></script>
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/a62111ea04.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
