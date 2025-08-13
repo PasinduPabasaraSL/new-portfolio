@@ -164,6 +164,8 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 80px;
     align-items: center;
+    position: relative;
+    top: 60px;
 }
 
 .hero-text h1 {
@@ -187,6 +189,7 @@ body {
 .hero-image {
     position: relative;
     left: 160px;
+    top: 16px;
 }
 
 .cta-button {
@@ -209,7 +212,10 @@ body {
     box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
 }
 
-/* .social-links {
+.social-links {
+    position: relative;
+    bottom: 100px;
+    left: 12px;
     margin-top: 20px;
     display: flex;
     gap: 20px;
@@ -224,7 +230,7 @@ body {
 .social-links a:hover {
     color: var(--accent-secondary);
     transform: translateY(-3px);
-} */
+}
 
 @media (max-width: 1024px) {
     .hero-content {
@@ -803,33 +809,36 @@ body {
 
 /* Contact Section */
 .contact {
-    padding: 120px 20px;
-    background: var(--bg-secondary);
+    min-height: 100vh;
     display: flex;
+    align-items: center;
     justify-content: center;
+    padding: 0 20px;
 }
 
 .contact-container {
-    max-width: 700px;
+    position: relative;
+    top: 22px;
+    max-width: 600px;
     width: 100%;
     padding: 40px;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.07);
     border-radius: 20px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(12px);
     text-align: center;
-    border: 1px solid var(--border-subtle);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .contact h2 {
-    font-size: 2.8rem;
+    font-size: 2rem;
     font-weight: 700;
     color: var(--text-primary);
     margin-bottom: 10px;
 }
 
 .contact-subtitle {
-    color: var(--text-muted);
+    color: var(--text-secondary);
     margin-bottom: 40px;
     font-size: 1rem;
 }
