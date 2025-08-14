@@ -1,32 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blog | Pasindu</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
-  <header>
-    <nav class="navbar">
-      <h1 class="logo">Pasindu</h1>
-      <ul class="nav-links">
+  <div class="bg-animation"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
+      <ul class="nav-list">
         <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-    </nav>
-  </header>
+    </div>
+  </nav>
 
-  <main>
-    <section class="blog">
-      <h2 class="section-title">My Blog</h2>
-      <div class="blog-card">
-        <h3>How I Built a Portfolio Site</h3>
-        <p>Discover the design decisions, code structure, and deployment techniques I used to build this professional site.</p>
-        <a href="https://medium.com/@your-medium-blog-url" class="btn" target="_blank">Read on Medium</a>
+  <!-- Blog Section -->
+  <section class="projects">
+    <h2>My Blogs</h2>
+    <div class="projects-container">
+      <div class="projects-grid">
+
+        <!-- Blog Post 1 -->
+        <div class="project-card">
+          <div class="project-content">
+            <h3 class="project-title">Effortlessly Switch Between Multiple Java Versions in the Same Command Prompt on
+              Windows</h3>
+            <p class="project-description">
+              Step-by-step method to quickly switch between different JDK versions without leaving your terminal —
+              perfect for developers juggling multiple projects.
+            </p>
+            <a href="https://medium.com/@pabasarapasindu365/effortlessly-switch-between-multiple-java-versions-in-the-same-command-prompt-on-windows-03adc8d1e96e"
+              class="project-link" target="_blank">Read More <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+
+        <!-- Blog Post 2 -->
+        <div class="project-card">
+          <div class="project-content">
+            <h3 class="project-title">Welcome to Java 101: Cracking Open the JDK, JVM, and JRE</h3>
+            <p class="project-description">
+              A beginner-friendly breakdown of Java's core components — understand what runs your code, what compiles
+              it, and why it matters.
+            </p>
+            <a href="https://medium.com/@pabasarapasindu365/java-development-kit-a-deep-dive-into-jvm-jre-and-jdk-5d39a758e807"
+              class="project-link" target="_blank">Read More <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+
+        <!-- Blog Post 3 -->
+        <div class="project-card">
+          <div class="project-content">
+            <h3 class="project-title">How to Host a Static Website on Vercel for Free</h3>
+            <p class="project-description">
+              Learn how to deploy your HTML, CSS, and JavaScript website to Vercel in minutes, with free hosting, HTTPS,
+              and zero configuration.
+            </p>
+            <a href="https://medium.com/@pabasarapasindu365/how-to-host-a-static-website-on-vercel-for-free-02988586ac1e"
+              class="project-link" target="_blank">Read More <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
+
+  <script src="https://kit.fontawesome.com/a62111ea04.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
