@@ -300,7 +300,8 @@ body {
 
     .social-links {
         justify-content: center;
-        margin-bottom: -1598px;
+        margin-bottom: -1585px;
+        margin-right: 35px;
         gap: 15px;
     }
 
