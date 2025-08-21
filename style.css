@@ -262,6 +262,11 @@ body {
     .cta-button {
         padding: 12px 24px;
     }
+
+    .social-links {
+        justify-content: center;
+        margin-top: 25px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -291,6 +296,16 @@ body {
     .cta-button {
         justify-content: center;
         margin-top: 20px;
+    }
+
+    .social-links {
+        justify-content: center;
+        margin-bottom: -1598px;
+        gap: 15px;
+    }
+
+    .social-links a {
+        font-size: 1.6rem;
     }
 }
 
