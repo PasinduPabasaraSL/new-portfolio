@@ -126,12 +126,17 @@ body {
 
 .hamburger {
     display: none;
-    font-size: 24px;
+    font-size: 32px;
+    color: #ffffff;
     background: none;
     border: none;
-    color: var(--text-secondary);
     cursor: pointer;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 1;
 }
+
 
 @media (max-width: 768px) {
     .nav-container {
